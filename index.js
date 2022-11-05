@@ -4,7 +4,8 @@ const fs = require('fs');
 const md = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const questions = [
+inquirer.prompt([
+// const questions = [
     {
         type: 'input',
         message: 'What is the title of your project?',
@@ -51,13 +52,19 @@ const questions = [
         message: 'What is your email address?',
         name: 'email',
     }
-];
+// ];
+]).then((data) => {
+    fs.writeFile('log.txt', data, (err) =>
+    err ? console.log(err) : console.log('Success!')
+    );
+})
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to write README file
+// function writeToFile(fileName, data) {}
 
-// Function call to initialize app
-init();
+// // TODO: Create a function to initialize app
+// function init() {}
+
+// // Function call to initialize app
+// init();
