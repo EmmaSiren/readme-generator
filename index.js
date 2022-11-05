@@ -54,7 +54,9 @@ inquirer.prompt([
     }
 // ];
 ]).then((data) => {
-    fs.writeFile('log.txt', data, (err) =>
+    const readmePageContent = md(data);
+
+    fs.writeFile('README.md', JSON.stringify(readmePageContent), (err) =>
     err ? console.log(err) : console.log('Success!')
     );
 })
