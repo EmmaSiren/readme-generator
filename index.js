@@ -39,7 +39,7 @@ const questions = [
     type: 'list',
     message: 'What license is your project covered under?',
     name: 'license',
-    choices: ['one', 'two', 'three'],
+    choices: ['GNU AGPLv3', 'Apache 2.0', 'MIT', 'Boost Sofware', 'None'],
   },
   {
     type: 'input',
