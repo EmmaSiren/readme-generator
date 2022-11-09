@@ -32,7 +32,7 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'What the instructions for testing?',
+    message: 'What are the instructions for testing?',
     name: 'test',
   },
   {
@@ -63,7 +63,7 @@ function writeToFile(fileName, data) {
 // // TODO: Create a function to initialize app
 function init() {
  inquirer.prompt(questions).then((answers) => {
-  writeToFile('README.md', md((answers)));
+  writeToFile('README-generated.md', md((answers)));
  });
 };
 
