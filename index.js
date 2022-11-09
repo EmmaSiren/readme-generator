@@ -22,7 +22,7 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'What information is needed for usage?',
+    message: 'Provide instructions for use.',
     name: 'usage',
   },
   {

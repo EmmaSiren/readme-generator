@@ -11,4 +11,4 @@ In order to streamline the ReadMe writing process for application projects I cre
 ## **Installation & Usage**
 Initiate Node.js by running ‘npm i’ in the GitBash terminal. Once all packages have been installed simply run the ‘node index.js’ command to run the application. This will begin the prompt of questions and ultimately write the ReadMe file using user inputted answers. See below for walkthrough video. 
 
-![alt text](assets/images/screenshot.png)
+[Walkthrough Video](https://drive.google.com/file/d/1Y2_jH0QMshwnEQZZtNrNpW7Pg9IuSuU1/view)
